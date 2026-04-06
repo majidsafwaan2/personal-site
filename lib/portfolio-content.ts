@@ -21,6 +21,16 @@ export const aboutNarrative =
 export const skillsSummary =
   "Python, C++, Java, JavaScript, SQL, HTML/CSS, Swift, Dart · Pandas, NumPy, SciPy, Plotly, Matplotlib · PyTorch, Hugging Face Transformers · Git/GitHub, Jupyter, Colab, Xcode, Mapbox GL · Fusion 360, SolidWorks · React, Node.js, Shopify Liquid";
 
+/** Shown on load and for `cat intro.txt` — about narrative only (no stack). */
+export function getIntroTerminalBody(): string {
+  return aboutNarrative;
+}
+
+/** Contents of `skills.txt` in the terminal. */
+export function getSkillsTerminalBody(): string {
+  return `Technical stack\n${skillsSummary.split(" · ").join("\n")}`;
+}
+
 export const projects: ModalItem[] = [
   {
     id: "nasa-vasts",
@@ -56,7 +66,7 @@ export const projects: ModalItem[] = [
     id: "ecommerce",
     title: "E-commerce (Sprione)",
     front:
-      "Created a D2C electronics brand and scaled it to $7k Monthly Recurring Revenue (MRR).",
+      "Created a D2C electronics brand and scaled it to $43,000 in total revenue.",
     modalBody:
       "Founded and managed direct-to-consumer brand Sprione, generating over $43,000 in total revenue. Developed custom Shopify Liquid themes and Python inventory scripts that reduced stock gaps by 30%. Managed end-to-end logistics and digital marketing funnels across TikTok and Meta platforms. The business was later sold on Flippa.",
   },

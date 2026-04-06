@@ -3,12 +3,7 @@ import { TerminalHero } from "@/components/TerminalHero";
 import { PortfolioCard } from "@/components/PortfolioCard";
 import { AwardCard } from "@/components/AwardCard";
 import { ContactSection } from "@/components/ContactSection";
-import {
-  aboutNarrative,
-  awards,
-  projects,
-  skillsSummary,
-} from "@/lib/portfolio-content";
+import { awards, projects } from "@/lib/portfolio-content";
 
 export default function Home() {
   return (
@@ -17,30 +12,19 @@ export default function Home() {
 
       <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col px-4 pb-20">
         <section className="text-center pt-4 pb-2">
-          <h1 className="text-3xl font-bold tracking-tight text-zinc-50 sm:text-4xl">
+          <h1 className="text-2xl font-bold tracking-tight text-zinc-50 sm:text-3xl">
             Safwaan Majid
           </h1>
-          <p className="mt-2 text-sm text-indigo-400/95 sm:text-base">
+          <p className="mt-2 text-xs leading-snug text-indigo-400/95 sm:text-sm">
             Competitive robotics · AI · Autonomous systems
           </p>
         </section>
 
-        <TerminalHero />
-
-        <section id="about" className="mt-16 scroll-mt-24">
-          <h2 className="text-2xl font-semibold text-zinc-100 border-b border-zinc-800 pb-2 mb-6">
-            About Me
-          </h2>
-          <p className="max-w-3xl text-base leading-relaxed text-zinc-400">
-            {aboutNarrative}
-          </p>
-          <p className="mt-6 max-w-3xl text-sm leading-relaxed text-zinc-500">
-            <span className="font-medium text-zinc-400">Technical stack: </span>
-            {skillsSummary}
-          </p>
+        <section id="about" className="scroll-mt-24" aria-label="About me">
+          <TerminalHero />
         </section>
 
-        <section id="projects" className="mt-16 scroll-mt-24">
+        <section id="projects" className="mt-14 scroll-mt-24">
           <h2 className="text-2xl font-semibold text-zinc-100 border-b border-zinc-800 pb-2 mb-5">
             Projects
           </h2>
