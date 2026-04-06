@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SiteNav } from "@/components/SiteNav";
 import { TerminalHero } from "@/components/TerminalHero";
 import { PortfolioCard } from "@/components/PortfolioCard";
@@ -11,13 +12,25 @@ export default function Home() {
       <SiteNav />
 
       <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col px-4 pb-20">
-        <section className="text-center pt-4 pb-2">
-          <h1 className="text-2xl font-bold tracking-tight text-zinc-50 sm:text-3xl">
-            Safwaan Majid
-          </h1>
-          <p className="mt-2 text-xs leading-snug text-indigo-400/95 sm:text-sm">
-            Competitive robotics · AI · Autonomous systems
-          </p>
+        <section className="flex flex-wrap items-center justify-center gap-3 pt-4 pb-2 sm:gap-5">
+          <div className="relative h-16 w-16 shrink-0 translate-x-[2px] overflow-hidden rounded-full border border-zinc-700/90 bg-zinc-800 shadow-inner sm:h-[5.5rem] sm:w-[5.5rem]">
+            <Image
+              src="/profile.png"
+              alt="Safwaan Majid"
+              width={88}
+              height={88}
+              className="h-full w-full object-cover object-top"
+              priority
+            />
+          </div>
+          <div className="min-w-0 text-center sm:text-left">
+            <h1 className="text-2xl font-bold tracking-tight text-zinc-50 sm:text-3xl">
+              Safwaan Majid
+            </h1>
+            <p className="mt-2 text-xs leading-snug text-indigo-400/95 sm:text-sm">
+              Competitive robotics · AI · Autonomous systems
+            </p>
+          </div>
         </section>
 
         <section id="about" className="scroll-mt-24" aria-label="About me">
