@@ -16,7 +16,7 @@ export type AwardItem = {
 };
 
 export const aboutNarrative =
-  "Hi I'm Safwaan. I have been doing competitive robotics for the past 7 years and am driven by a mission to reduce dangerous manual labor through autonomous robotics, and democratizing access to AI.";
+  "Hi I'm Safwaan. I have been doing competitive robotics for the past 7 years and am driven by a mission to reduce dangerous manual labor through autonomous robotics, and hit Unreal in Fortnite.";
 
 export const skillsSummary =
   "Python, C++, Java, JavaScript, SQL, HTML/CSS, Swift, Dart · Pandas, NumPy, SciPy, Plotly, Matplotlib · PyTorch, Hugging Face Transformers · Git/GitHub, Jupyter, Colab, Xcode, Mapbox GL · Fusion 360, SolidWorks · React, Node.js, Shopify Liquid";
@@ -68,7 +68,7 @@ export const projects: ModalItem[] = [
     front:
       "Created a D2C electronics brand and scaled it to $43,000 in total revenue.",
     modalBody:
-      "Founded and managed direct-to-consumer brand Sprione, generating over $43,000 in total revenue. Developed custom Shopify Liquid themes and Python inventory scripts that reduced stock gaps by 30%. Managed end-to-end logistics and digital marketing funnels across TikTok and Meta platforms. The business was later sold on Flippa.",
+      "Founded and managed direct-to-consumer brand Sprione, generating over $43,000 in total revenue. Developed custom Shopify Liquid themes and Python inventory scripts that reduced stock gaps by 30%. Managed end-to-end logistics and digital marketing funnels across TikTok and Meta platforms. The business ultimately had to shut down when supplier reliability and inventory timing became unsustainable—an especially hard constraint when you're fully bootstrapped and can't absorb long lead times or stockouts.",
   },
   {
     id: "sham",

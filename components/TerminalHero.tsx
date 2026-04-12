@@ -13,7 +13,7 @@ type TermLine =
   | { kind: "cmd"; text: string; key: string };
 
 const MISSION_TEXT =
-  "Mission: reduce dangerous manual labor through autonomous robotics and democratize access to AI — seven years in competitive robotics and counting.";
+  "Mission: reduce dangerous manual labor through autonomous robotics — seven years in competitive robotics and counting.";
 
 function makeInitialLines(): TermLine[] {
   return [
@@ -120,12 +120,24 @@ export function TerminalHero() {
 
   return (
     <div className="w-full pt-6 pb-2">
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-        className="terminal-font rounded-xl overflow-hidden border border-zinc-800/90 shadow-[0_24px_80px_-24px_rgba(99,102,241,0.25)]"
-      >
+      <p className="mb-2 px-1 text-center text-[10px] leading-snug text-zinc-600 sm:hidden">
+        I stole this design from Omeed Tehrani, check his out, it&apos;s much
+        cooler
+      </p>
+      <div className="flex w-full items-stretch gap-1.5 sm:gap-2">
+        <p
+          className="hidden max-w-[2.75rem] shrink-0 select-none self-start pt-10 text-[9px] leading-snug tracking-wide text-zinc-600 sm:block sm:max-w-[3rem] sm:text-[10px]"
+          style={{ writingMode: "vertical-rl" }}
+        >
+          I stole this design from Omeed Tehrani, check his out, it&apos;s much
+          cooler
+        </p>
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+          className="terminal-font min-w-0 flex-1 rounded-xl overflow-hidden border border-zinc-800/90 shadow-[0_24px_80px_-24px_rgba(99,102,241,0.25)]"
+        >
         {/* Title bar */}
         <div className="flex h-10 items-center gap-2 border-b border-zinc-800/80 bg-[#161b22] px-3 font-mono">
           <span className="inline-flex gap-1.5">
@@ -192,6 +204,7 @@ export function TerminalHero() {
           </div>
         </div>
       </motion.div>
+      </div>
 
       <p className="mt-4 text-center text-xs leading-snug text-zinc-500 sm:text-sm">
         <span className="mr-1" aria-hidden>
