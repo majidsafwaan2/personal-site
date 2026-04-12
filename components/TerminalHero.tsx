@@ -120,15 +120,11 @@ export function TerminalHero() {
 
   return (
     <div className="w-full pt-6 pb-2">
-      <p className="mb-2 px-1 text-center text-[10px] leading-snug text-zinc-600 sm:hidden">
-        I stole this design from Omeed Tehrani, check his out, it&apos;s much
-        cooler
-      </p>
-      <div className="flex w-full items-stretch gap-1.5 overflow-visible sm:gap-2">
-        {/* Rotated -90° (CCW): reads from bottom → up along the left edge of the terminal */}
-        <div className="relative hidden w-9 shrink-0 self-stretch overflow-visible sm:flex sm:w-11 sm:items-center sm:justify-center">
+      <div className="flex w-full flex-row items-stretch gap-1.5 overflow-visible sm:gap-2">
+        {/* Rotated -90° (CCW): along the left edge of the terminal; bottom → up */}
+        <div className="relative flex w-[2.125rem] shrink-0 flex-col items-center justify-center self-stretch overflow-visible sm:w-12">
           <p
-            className="pointer-events-none origin-center -rotate-90 select-none whitespace-nowrap text-[9px] tracking-wide text-zinc-600 sm:text-[10px]"
+            className="pointer-events-none inline-block origin-center -rotate-90 transform select-none whitespace-nowrap text-[7px] leading-none tracking-wide text-zinc-600 sm:text-[10px]"
           >
             I stole this design from Omeed Tehrani, check his out, it&apos;s much
             cooler
