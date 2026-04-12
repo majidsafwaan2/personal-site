@@ -124,14 +124,16 @@ export function TerminalHero() {
         I stole this design from Omeed Tehrani, check his out, it&apos;s much
         cooler
       </p>
-      <div className="flex w-full items-stretch gap-1.5 sm:gap-2">
-        <p
-          className="hidden max-w-[2.75rem] shrink-0 select-none self-start pt-10 text-[9px] leading-snug tracking-wide text-zinc-600 sm:block sm:max-w-[3rem] sm:text-[10px]"
-          style={{ writingMode: "vertical-rl" }}
-        >
-          I stole this design from Omeed Tehrani, check his out, it&apos;s much
-          cooler
-        </p>
+      <div className="flex w-full items-stretch gap-1.5 overflow-visible sm:gap-2">
+        {/* Rotated -90° (CCW): reads from bottom → up along the left edge of the terminal */}
+        <div className="relative hidden w-9 shrink-0 self-stretch overflow-visible sm:flex sm:w-11 sm:items-center sm:justify-center">
+          <p
+            className="pointer-events-none origin-center -rotate-90 select-none whitespace-nowrap text-[9px] tracking-wide text-zinc-600 sm:text-[10px]"
+          >
+            I stole this design from Omeed Tehrani, check his out, it&apos;s much
+            cooler
+          </p>
+        </div>
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
