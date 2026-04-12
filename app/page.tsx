@@ -78,10 +78,10 @@ export default function Home() {
               <h3 className="text-sm font-semibold uppercase tracking-wide text-indigo-400">
                 SAT
               </h3>
+              <p className="mt-2 text-2xl font-bold text-zinc-100">1540</p>
               <p className="mt-2 text-sm leading-relaxed text-zinc-300">
                 760 English · 780 Math
               </p>
-              <p className="mt-2 text-lg font-bold text-zinc-100">1540</p>
               <p className="mt-1 text-xs text-zinc-500">Composite score</p>
             </div>
             <div className="rounded-xl border border-zinc-800/90 bg-zinc-900/40 p-5 transition-colors hover:border-indigo-500/50">
