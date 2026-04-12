@@ -126,7 +126,7 @@ export function TerminalHero() {
           <p
             className="pointer-events-none inline-block origin-center -rotate-90 transform select-none whitespace-nowrap text-[7px] leading-none tracking-wide text-zinc-600 sm:text-[10px]"
           >
-            I stole this design from Omeed Tehrani, check his out, it&apos;s much
+            I took this design from Omeed Tehrani, check his out, it&apos;s much
             cooler
           </p>
         </div>
