@@ -68,7 +68,7 @@ export const projects: ModalItem[] = [
     front:
       "Created a D2C electronics brand and scaled it to $43,000 in total revenue.",
     modalBody:
-      "Founded and managed direct-to-consumer brand Sprione, generating over $43,000 in total revenue. Developed custom Shopify Liquid themes and Python inventory scripts that reduced stock gaps by 30%. Managed end-to-end logistics and digital marketing funnels across TikTok and Meta platforms. The business ultimately had to shut down when supplier reliability and inventory timing became unsustainable—an especially hard constraint when you're fully bootstrapped and can't absorb long lead times or stockouts.",
+      "Founded and managed direct-to-consumer brand Sprione, generating over $43,000 in total revenue. Developed custom Shopify Liquid themes and Python inventory scripts that reduced stock gaps by 30%. Managed end-to-end logistics and digital marketing funnels across TikTok and Meta platforms. The business ultimately had to shut down due to back-to-back supplier scams (hard constraint when you're fully bootstrapped).",
   },
   {
     id: "sham",
