@@ -119,10 +119,10 @@ export function TerminalHero() {
   }, [value]);
 
   return (
-    <div className="w-full pt-6 pb-2">
-      <div className="flex w-full flex-row items-stretch gap-1.5 overflow-visible sm:gap-2">
+    <div className="-mx-2 w-full pt-6 pb-2 sm:-mx-3">
+      <div className="flex w-full flex-row items-stretch gap-1 overflow-visible sm:gap-1.5">
         {/* Rotated -90° (CCW): along the left edge of the terminal; bottom → up */}
-        <div className="relative flex w-[2.125rem] shrink-0 flex-col items-center justify-center self-stretch overflow-visible sm:w-12">
+        <div className="relative flex w-[1.625rem] shrink-0 flex-col items-center justify-center self-stretch overflow-visible sm:w-10">
           <p
             className="pointer-events-none inline-block origin-center -rotate-90 transform select-none whitespace-nowrap text-[7px] leading-none tracking-wide text-zinc-600 sm:text-[10px]"
           >
